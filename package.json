@@ -5,7 +5,8 @@
   "version": "57.4.0",
   "publisher": "nikitakarpenkov",
   "license": "BSD-3-Clause",
-  "main": "out/src",
+  "main": "./lib/src/index.js",
+  "types": "./lib/src/index.d.ts",
   "dependencies": {
     "@salesforce/core": "^3.31.18",
     "jsforce": "2.0.0-beta.20",
@@ -34,12 +35,16 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "compile": "tsc -p ./",
+    "build": "tsc -p ./",
     "lint": "tslint --project .",
     "lint:fix": "npm run lint -- --fix",
     "watch": "tsc -watch -p .",
-    "clean": "shx rm -rf node_modules && shx rm -rf out"
+    "clean": "shx rm -rf node_modules && shx rm -rf lib",
+    "prepare": "npm run build"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "nyc": {
     "reporter": [
       "text-summary",

@@ -4,7 +4,7 @@
 
 # TypeScript generated files
 dist/
-out/
+lib/
 
 # Logs
 logs
@@ -117,3 +117,5 @@ packages/dbaeumer*
 
 # Extension build directory
 packages/**/extension
+
+.idea
