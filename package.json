@@ -5,9 +5,6 @@
   "version": "57.4.0",
   "publisher": "nikitakarpenkov",
   "license": "BSD-3-Clause",
-  "engines": {
-    "vscode": "^1.61.2"
-  },
   "main": "out/src",
   "dependencies": {
     "@salesforce/core": "^3.31.18",
